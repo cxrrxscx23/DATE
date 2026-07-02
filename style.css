@@ -1,0 +1,259 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#0f172a;
+
+    color:white;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* Fondo */
+
+.background{
+
+    position:absolute;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+    radial-gradient(circle at top,#7a2338 0%,transparent 45%),
+    #0f172a;
+
+    opacity:.9;
+
+}
+
+/* Tarjeta */
+
+.container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:650px;
+
+    max-width:90%;
+
+    padding:60px;
+
+    text-align:center;
+
+    background:rgba(30,41,59,.92);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+
+}
+
+/* Títulos */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:72px;
+
+    font-weight:400;
+
+    margin-bottom:25px;
+
+    color:white;
+
+}
+
+h2{
+
+    font-size:34px;
+
+    margin-bottom:20px;
+
+    font-weight:600;
+
+}
+
+/* Texto */
+
+.subtitle{
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    color:#d7dce5;
+
+    margin-bottom:35px;
+
+}
+
+.mensaje{
+
+    font-size:21px;
+
+    line-height:1.9;
+
+    margin-bottom:35px;
+
+}
+
+/* Botón */
+
+button{
+
+    background:#7a2338;
+
+    color:white;
+
+    border:none;
+
+    padding:16px 45px;
+
+    font-size:19px;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-family:'Poppins',sans-serif;
+
+    font-weight:600;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:#922d46;
+
+    box-shadow:0 12px 30px rgba(122,35,56,.45);
+
+}
+
+/* Barra */
+
+.progress{
+
+    width:100%;
+
+    height:15px;
+
+    background:#314056;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:30px;
+
+}
+
+.progress-bar{
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#7a2338,#c2466a);
+
+}
+
+.percent{
+
+    margin-top:18px;
+
+    font-size:22px;
+
+}
+
+/* Animaciones */
+
+.fadeOut{
+
+    animation:fadeOut .6s forwards;
+
+}
+
+.fadeIn{
+
+    animation:fadeIn .6s forwards;
+
+}
+
+@keyframes fadeOut{
+
+    from{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        opacity:0;
+
+        transform:translateY(-15px);
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(15px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Registros */
+
+.registro{
+
+    margin:18px 0;
+
+    font-size:20px;
+
+    animation:fadeIn .5s;
+
+}
